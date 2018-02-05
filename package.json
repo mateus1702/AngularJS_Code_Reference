@@ -1,0 +1,14 @@
+{
+  "name": "ui_angularjs",
+  "version": "1.0.0",
+  "description": "angularjs user interface bootstrap",
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "http-server": "^0.11.1"
+  }
+}

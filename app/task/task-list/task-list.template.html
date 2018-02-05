@@ -1,0 +1,27 @@
+ <loading ng-if="loading"></loading>
+ <div ng-if="!loading">
+   <div class="container body-content">
+     <h2>Index</h2>
+     <p><a href="#!/task/create">Create New</a></p>
+     <table class="table" ng-if="!loading">
+        <tbody>
+           <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Owner</th>
+              <th>Done</th>
+              <th></th>
+           </tr>
+           <tr ng-repeat="task in $ctrl.tasks">
+             <td>{{task.Id}} {{task.Name}}</td>
+             <td>{{task.Date | date:'dd/MM/yyyy'}}</td>
+             <td>{{task.Owner}}</td>
+             <td><input class="check-box" disabled="" type="checkbox" ng-checked="{{task.Done}}"></td>
+             <td><a href="#!/task/update/{{task.Id}}">Edit</a> |<a href="#!/task/read/{{task.Id}}">Details</a> |<a href="#!/task/delete/{{task.Id}}">Delete</a></td>
+           </tr>
+        </tbody>
+     </table>
+     <hr />
+     <footer-component></footer-component>
+   </div>
+ </div>

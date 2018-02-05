@@ -1,0 +1,17 @@
+{
+  "name": "ui_angularjs",
+  "description": "angularjs user interface bootstrap",
+  "main": "",
+  "authors": [
+    ""
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "1.5.x",
+    "bootstrap": "3.3.x",
+    "angular-route": "1.5.x",
+    "jquery": "2.2.x",
+    "angular-resource": "1.5.x"
+  }
+}
